@@ -1,4 +1,14 @@
 
+.round{
+    font-size: xx-large;
+    color: white;
+}
+
+.timer{
+    font-size: xx-large;
+    color: white;
+}
+
 .simon{
     margin: auto;
     display: flex;
@@ -9,19 +19,24 @@
     height: 60vh;
 }
 
+
 .rouge{
+    margin-bottom: 2%;
+    margin-inline: 2%;
     width: 300px;
     aspect-ratio: 1;
     background-color: red;
     cursor: pointer;
 }
 .bleu{
+    margin-bottom: 2%;
     width: 300px;
     aspect-ratio: 1;
     background-color: blue;
     cursor: pointer;
 }
 .vert{
+    margin-inline: 2%;
     width: 300px;
     aspect-ratio: 1;
     background-color: green;
