@@ -37,7 +37,7 @@ function handleClick(event: React.MouseEvent<HTMLDivElement>) {
       if(sequence[player - 1] == sequence.length){
         console.log("Good ! Niveau suivant")
         setRound(round+1)
-        Round(round)
+        Round()
       }
       console.log("GOOD")
     }else{
@@ -51,7 +51,7 @@ function handleClick(event: React.MouseEvent<HTMLDivElement>) {
 }
 
 
-function Round(round: number){
+function Round(){
     let randomColor = Math.floor(1 + Math.random() * (4 - 1)) 
     setSequence(sequence => [...sequence, randomColor])
     setPlayerIsPlaying(false)
