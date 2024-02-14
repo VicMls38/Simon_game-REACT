@@ -13,6 +13,7 @@ function Simon() {
 useEffect(() => {
   
   if(playerIsPlaying == false){
+    Round(round)
    setTimeout(() => {
       setSeconds(seconds + 1);
         setCurrentIndex(currentIndex+1)
@@ -37,7 +38,7 @@ function handleClick(event: React.MouseEvent<HTMLDivElement>) {
       if(sequence[player - 1] == sequence.length){
         console.log("Good ! Niveau suivant")
         setRound(round+1)
-        Round()
+        Round(round)
       }
       console.log("GOOD")
     }else{
@@ -51,10 +52,13 @@ function handleClick(event: React.MouseEvent<HTMLDivElement>) {
 }
 
 
-function Round(){
+function Round(round: number){
+  if(round != sequence.length){
     let randomColor = Math.floor(1 + Math.random() * (4 - 1)) 
     setSequence(sequence => [...sequence, randomColor])
     setPlayerIsPlaying(false)
+  }
+
 }
 
 
