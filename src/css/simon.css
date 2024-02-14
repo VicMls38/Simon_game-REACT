@@ -1,0 +1,35 @@
+
+.simon{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 60vh;
+}
+
+.rouge{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: red;
+    cursor: pointer;
+}
+.bleu{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: blue;
+    cursor: pointer;
+}
+.vert{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: green;
+    cursor: pointer;
+}
+.jaune{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: yellow;
+    cursor: pointer;
+}
