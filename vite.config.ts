@@ -11,6 +11,7 @@ export default defineConfig({
       devOptions: {
         enabled: true
       },
+      
       manifest: {
         theme_color: "#f69435",
         background_color: "#f69435",
@@ -46,7 +47,27 @@ export default defineConfig({
                 type: "image/png"
             }
         ]
+    },
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: 'http://localhost:3000',
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'currentDate',
+            expiration: {
+              maxEntries: 10,
+              maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+            },
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        }
+      ]
     }
     })
   ],
+
+  
 })

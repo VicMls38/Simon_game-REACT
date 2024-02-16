@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 800px;
+    width: 500px;
     height: 60vh;
 }
 
@@ -23,27 +23,27 @@
 .rouge{
     margin-bottom: 2%;
     margin-inline: 2%;
-    width: 300px;
+    width: 200px;
     aspect-ratio: 1;
     background-color: red;
     cursor: pointer;
 }
 .bleu{
     margin-bottom: 2%;
-    width: 300px;
+    width: 200px;
     aspect-ratio: 1;
     background-color: blue;
     cursor: pointer;
 }
 .vert{
     margin-inline: 2%;
-    width: 300px;
+    width: 200px;
     aspect-ratio: 1;
     background-color: green;
     cursor: pointer;
 }
 .jaune{
-    width: 300px;
+    width: 200px;
     aspect-ratio: 1;
     background-color: yellow;
     cursor: pointer;
